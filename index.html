@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <header>
+        <h1>Rock - Paper - Scissors</h1>
+    </header>
+    <div class="score-board">
+        <div id="user-side" class="side">YOU</div>
+        <div id="cpu-side" class="side">CPU</div>
+        <span id="user-score">0</span>:<span id="cpu-score">0</span>
+    </div>
+    <h2>Choose an option</h2>
+    <div class="options">
+        <div id="rock" class="option">
+            <img src="../img/rock.png" alt="">
+        </div>
+        <div id="paper" class="option">
+            <img src="../img/paper.png" alt="">
+        </div>
+        <div id="scissors" class="option">
+            <img src="../img/scissors.png" alt="">
+        </div>
+    </div>
+    <div class="btn-container">
+        <button id="restart" class="restart-btn">Restart Game</button>
+    </div>
+
+    <!-- Modal -->
+  <div class="modal">
+    <div id="result" class="modal-content"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
