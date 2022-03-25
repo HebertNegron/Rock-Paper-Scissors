@@ -20,7 +20,7 @@ function win(userChoice, cpuChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     result.innerHTML = `<span class="close"></span> <h1 class="text-win">You win!</h1> <p>Computer choose <strong>${cpuChoice}</strong>
-    <img src="../img/${cpuChoice}.png" alt=""></p>`;
+    <img src="img/${cpuChoice}.png" alt=""></p>`;
     modal.style.display = 'block';
 }
 
@@ -28,20 +28,20 @@ function lose(userChoice, cpuChoice){
     cpuScore++;
     cpuScore_span.innerHTML = cpuScore;
     result.innerHTML = `<span class="close"></span> <h1 class="text-lose">You lost</h1> <p>Computer choose <strong>${cpuChoice}</strong>
-    <img src="../img/${cpuChoice}.png" alt=""></p>`; 
+    <img src="img/${cpuChoice}.png" alt=""></p>`; 
     modal.style.display = 'block'
 }
 
 function draw(userChoice, cpuChoice){
     result.innerHTML = `<span class="close"></span> <h1>It's a draw</h1> <p>You both choose <strong>${cpuChoice}</strong>
-    <img src="../img/${cpuChoice}.png" alt=""></p>`;
+    <img src="img/${cpuChoice}.png" alt=""></p>`;
     modal.style.display = 'block'
 }
 
 function play(userChoice) {
     const cpuChoice = getCpuChoice();
     switch (userChoice + cpuChoice) {
-      case 'rockscissors':
+      case 'rockscissors':s
       case 'paperrock':
       case 'scissorspaper':
         win(userChoice, cpuChoice);
